@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>gradiant Genrater</title>
+</head>
+<body>
+    <div class="container">
+        <div class="rectangle">
+            <div class="color">
+                <input type="color"  id="color-a" value="#1488cc">
+                <input type="color"  id="color-b" value="#8888ca">
+            </div> 
+            <div class="buttons">
+                <button  onclick="dirction('to left',this)">
+                    <i class="ri-arrow-left-line"></i>
+                </button>
+                <!-- class="active" -->
+                <button    onclick="dirction('to right',this)">
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+                <button  onclick="dirction('to top',this)">
+                    <i class="ri-arrow-up-line"></i>
+                </button>
+                <button class="dir active" onclick="dirction('to bottom',this)">
+                    <i class="ri-arrow-down-line"></i>
+                </button>
+
+                <button class="rotate-icon"  onclick="dirction('to left top',this)">
+                    <i class="ri-arrow-left-line"></i>
+                </button>
+                <button class="rotate-icon"  onclick="dirction('to right bottom',this)">
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+                <button class="rotate-icon"  onclick="dirction('to right top',this)">
+                    <i class="ri-arrow-up-line"></i>
+                </button>
+                <button class="rotate-icon"  onclick="dirction('to left bottom',this)">
+                    <i class="ri-arrow-down-line"></i>
+                </button>
+            </div>
+            <button id="submit" onclick="genrate()">Gentate</button>
+            <div class="output">
+               <textarea id="code" rows="3"></textarea>
+                <button id="copy" >Copy</button>
+            </div>
+
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

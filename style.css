@@ -1,0 +1,105 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  height: 100vh;
+}
+.rectangle {
+  position: absolute;
+  width: 400px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.274);
+}
+.color {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+input[type="color"] {
+  /* -webkit-appearance: none; */
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50px;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 20px;
+  border: none;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+  /* margin: 10px; */
+}
+.buttons button {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(233, 233, 233);
+  color: rgb(148, 148, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.274); */
+}
+.rotate-icon i {
+  position: absolute;
+  transform: rotate(45deg);
+}
+.buttons .active {
+  /* box-shadow: 0px 0px 1px 2px rgb(255, 0, 0); */
+  border: none;
+  background-color: rgb(0, 108, 209);
+  color: white;
+}
+#submit {
+  display: block;
+  border: none;
+  background-color: rgb(0, 108, 209);
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 20px;
+  width: 150px;
+  color: white;
+  margin: 10px auto;
+}
+.output {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+#code {
+  width: 100%;
+  padding: 5px 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: rgb(231, 231, 231);
+}
+#copy {
+  border: none;
+  background-color: rgb(0, 108, 209);
+  font-size: 15px;
+  padding: 8px;
+  color: white;
+}
